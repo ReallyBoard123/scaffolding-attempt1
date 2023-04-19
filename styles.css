@@ -1,0 +1,189 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	margin-left: 300px;
+	background-color: #1db954;
+	height: 4rem;
+	position: relative;
+}
+
+.header-container {
+	width: 100%;
+	height: 100%;
+	padding: 0 1.25rem;
+	position: absolute;
+}
+
+.chevron-container {
+	display: inline-block;
+	position: absolute;
+	left: 1.25rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.chevron-left,
+.chevron-right {
+	width: 24px;
+	height: 24px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	margin: 0 0.5rem;
+	display: inline-block;
+}
+
+.btn-container {
+	display: inline-block;
+	position: absolute;
+	right: 1.25rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.btn {
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	margin-left: 0.5rem;
+	display: inline-block;
+}
+
+.signup-btn {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.login-btn {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #ffffff;
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+	opacity: 0.8;
+}
+
+main {
+	margin-left: 300px;
+	padding: 1.25rem 0;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100vh;
+	background-color: #000;
+}
+
+.logo-placeholder {
+	width: 40px;
+	height: 40px;
+	background-color: #555;
+	margin: 1.25rem;
+	opacity: 0.8;
+}
+
+.nav {
+	padding: 0;
+	margin: 0;
+}
+
+.nav-link {
+	display: block;
+	text-decoration: none;
+	margin-left: 1.25rem;
+	margin-bottom: 1rem;
+}
+
+.nav-icon {
+	width: 30px;
+	height: 30px;
+	background-color: #777;
+	opacity: 0.7;
+}
+
+.nav-name {
+	display: none;
+}
+
+.nav-link:hover .nav-icon {
+	opacity: 1;
+}
+
+.main-section {
+	width: 100%;
+	padding: 1.25rem 0;
+	text-align: center;
+}
+
+.main-card {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	background-color: #444444;
+	border-radius: 4px;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.card-image {
+	width: 100%;
+	height: 200px;
+	background-color: #222222;
+}
+
+.card-title {
+	height: 40px;
+	background-color: #555555;
+	margin: 10px;
+}
+
+.card-description {
+	height: 32px;
+	background-color: #777777;
+	margin: 10px;
+}
+
+.card-play-icon {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	background-color: #1db954;
+	border-radius: 50%;
+	display: none;
+}
+
+.main-card:hover .card-play-icon {
+	display: block;
+}
+
+footer {
+	margin-left: 300px;
+	background-color: #000000;
+	height: 4rem;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+}
+
+.footer-link {
+	color: #ffffff;
+	padding-left: 20px;
+	text-decoration: none;
+}
